@@ -1,0 +1,2483 @@
+<!DOCTYPE html>
+<html lang="ja" data-theme="dark">
+<head>
+<!--
+   ______                            __
+  / ____/___  ____ ___  ____  __  __/ /____  _____
+ / /   / __ \/ __ `__ \/ __ \/ / / / __/ _ \/ ___/
+/ /___/ /_/ / / / / / / /_/ / /_/ / /_/  __/ /
+\____/\____/_/ /_/ /_/ .___/\__,_/\__/\___/_/
+                    /_/
+        Created with Perplexity Computer
+        https://www.perplexity.ai/computer
+-->
+
+<!-- Perplexity Computer Attribution — SEO Meta Tags -->
+<meta name="generator" content="Perplexity Computer">
+<meta name="author" content="Perplexity Computer">
+<meta property="og:see_also" content="https://www.perplexity.ai/computer">
+<link rel="author" href="https://www.perplexity.ai/computer">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ステーブルコイン 完全解説 2026</title>
+
+<!-- Fonts -->
+<link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,500,700,800&f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+
+<style>
+/* ===== DESIGN TOKENS ===== */
+:root, [data-theme="light"] {
+  --color-bg: #f5f5f0;
+  --color-surface: #fafaf7;
+  --color-surface-2: #ffffff;
+  --color-surface-offset: #eeede8;
+  --color-divider: #d8d7d1;
+  --color-border: #cccbc4;
+  --color-text: #1a1a18;
+  --color-text-muted: #6b6b66;
+  --color-text-faint: #aaa;
+
+  /* Brand: デジタルフィナンス — deep navy + electric blue */
+  --color-primary: #0055cc;
+  --color-primary-hover: #003fa0;
+  --color-primary-light: #e0eaff;
+  --color-accent: #00c2ff;
+  --color-accent-2: #7c3aed;
+
+  /* Category colors */
+  --color-fiat: #0055cc;
+  --color-crypto: #7c3aed;
+  --color-algo: #dc2626;
+  --color-commodity: #d97706;
+
+  --radius-sm: 0.375rem;
+  --radius-md: 0.625rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-full: 9999px;
+
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
+  --shadow-md: 0 4px 16px rgba(0,0,0,0.08);
+  --shadow-lg: 0 12px 40px rgba(0,0,0,0.1);
+
+  --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+  --text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
+  --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+  --text-lg: clamp(1.125rem, 1rem + 0.75vw, 1.5rem);
+  --text-xl: clamp(1.5rem, 1.2rem + 1.25vw, 2.25rem);
+  --text-2xl: clamp(2rem, 1.2rem + 2.5vw, 3.5rem);
+
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+
+  --font-display: 'Cabinet Grotesk', 'Helvetica Neue', sans-serif;
+  --font-body: 'Satoshi', 'Inter', sans-serif;
+
+  --transition: 180ms cubic-bezier(0.16, 1, 0.3, 1);
+  --content-default: 1080px;
+}
+
+[data-theme="dark"] {
+  --color-bg: #0f1117;
+  --color-surface: #161820;
+  --color-surface-2: #1d2030;
+  --color-surface-offset: #13151d;
+  --color-divider: #252836;
+  --color-border: #2e3245;
+  --color-text: #e8e9f0;
+  --color-text-muted: #8890aa;
+  --color-text-faint: #50566a;
+  --color-primary: #4d88ff;
+  --color-primary-hover: #6699ff;
+  --color-primary-light: #111a33;
+  --color-accent: #00d4ff;
+  --color-accent-2: #a78bfa;
+
+  --color-fiat: #4d88ff;
+  --color-crypto: #a78bfa;
+  --color-algo: #f87171;
+  --color-commodity: #fbbf24;
+
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.3);
+  --shadow-md: 0 4px 16px rgba(0,0,0,0.4);
+  --shadow-lg: 0 12px 40px rgba(0,0,0,0.5);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --color-bg: #0f1117;
+    --color-surface: #161820;
+    --color-surface-2: #1d2030;
+    --color-surface-offset: #13151d;
+    --color-divider: #252836;
+    --color-border: #2e3245;
+    --color-text: #e8e9f0;
+    --color-text-muted: #8890aa;
+    --color-text-faint: #50566a;
+    --color-primary: #4d88ff;
+    --color-primary-hover: #6699ff;
+    --color-primary-light: #111a33;
+    --color-accent: #00d4ff;
+    --color-accent-2: #a78bfa;
+    --color-fiat: #4d88ff;
+    --color-crypto: #a78bfa;
+    --color-algo: #f87171;
+    --color-commodity: #fbbf24;
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.3);
+    --shadow-md: 0 4px 16px rgba(0,0,0,0.4);
+    --shadow-lg: 0 12px 40px rgba(0,0,0,0.5);
+  }
+}
+
+/* ===== BASE ===== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+body {
+  min-height: 100dvh;
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  color: var(--color-text);
+  background: var(--color-bg);
+  line-height: 1.7;
+}
+img, svg { display: block; max-width: 100%; }
+h1,h2,h3,h4 { font-family: var(--font-display); text-wrap: balance; line-height: 1.15; }
+p, li { text-wrap: pretty; max-width: 70ch; }
+a { color: var(--color-primary); text-decoration: none; transition: color var(--transition); }
+a:hover { color: var(--color-primary-hover); }
+button { cursor: pointer; background: none; border: none; font: inherit; color: inherit; }
+::selection { background: rgba(77,136,255,0.2); color: var(--color-text); }
+:focus-visible { outline: 2px solid var(--color-primary); outline-offset: 3px; border-radius: var(--radius-sm); }
+
+/* ===== LAYOUT ===== */
+.container {
+  max-width: var(--content-default);
+  margin: 0 auto;
+  padding: 0 var(--space-6);
+}
+
+/* ===== HEADER / NAV ===== */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: color-mix(in oklab, var(--color-bg) 90%, transparent);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--color-divider);
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  gap: var(--space-6);
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: var(--text-sm);
+  letter-spacing: -0.02em;
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
+  list-style: none;
+}
+
+.nav-links a {
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--color-text-muted);
+  transition: color var(--transition);
+  white-space: nowrap;
+}
+.nav-links a:hover { color: var(--color-text); }
+
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-md);
+  color: var(--color-text-muted);
+  border: 1px solid var(--color-border);
+  transition: all var(--transition);
+  flex-shrink: 0;
+}
+.theme-toggle:hover {
+  background: var(--color-surface-offset);
+  color: var(--color-text);
+}
+
+/* ===== HERO ===== */
+.hero {
+  padding: var(--space-20) 0 var(--space-16);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: var(--space-12);
+  align-items: center;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-full);
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: var(--space-5);
+  width: fit-content;
+}
+
+.hero h1 {
+  font-size: var(--text-2xl);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin-bottom: var(--space-5);
+  line-height: 1.1;
+}
+
+.hero h1 .accent {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-desc {
+  font-size: var(--text-lg);
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-8);
+  max-width: 54ch;
+}
+
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-4);
+}
+
+.stat-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5) var(--space-5);
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+.stat-card:hover {
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-md);
+}
+
+.stat-value {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 2vw, 2rem);
+  font-weight: 800;
+  color: var(--color-text);
+  letter-spacing: -0.03em;
+  line-height: 1;
+  margin-bottom: var(--space-2);
+}
+
+.stat-label {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  font-weight: 500;
+}
+
+/* Hero Visual */
+.hero-visual {
+  position: relative;
+}
+
+.hero-visual-inner {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-lg);
+}
+
+.market-cap-title {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: var(--space-4);
+}
+
+/* Donut chart */
+.donut-wrap {
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
+  margin-bottom: var(--space-6);
+}
+
+.donut-svg { flex-shrink: 0; }
+
+.donut-legend {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  flex: 1;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.legend-name {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-text);
+  flex: 1;
+}
+
+.legend-pct {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  font-family: var(--font-display);
+  color: var(--color-text-muted);
+}
+
+.market-total {
+  border-top: 1px solid var(--color-divider);
+  padding-top: var(--space-4);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.market-total-label { font-size: var(--text-xs); color: var(--color-text-faint); }
+.market-total-value {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: 800;
+  color: var(--color-text);
+}
+
+/* ===== SECTIONS ===== */
+section {
+  padding: clamp(var(--space-12), 6vw, var(--space-20)) 0;
+}
+
+.section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  margin-bottom: var(--space-4);
+}
+
+.section-title {
+  font-size: var(--text-xl);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: var(--space-3);
+}
+
+.section-desc {
+  font-size: var(--text-base);
+  color: var(--color-text-muted);
+  max-width: 60ch;
+  margin-bottom: var(--space-10);
+}
+
+/* ===== TYPE CARDS ===== */
+.types-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-6);
+}
+
+.type-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-8);
+  position: relative;
+  overflow: hidden;
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+}
+
+.type-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.type-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+}
+
+.type-card.fiat::before { background: var(--color-fiat); }
+.type-card.crypto::before { background: var(--color-crypto); }
+.type-card.algo::before { background: var(--color-algo); }
+.type-card.commodity::before { background: var(--color-commodity); }
+
+.type-card.fiat:hover { border-color: var(--color-fiat); }
+.type-card.crypto:hover { border-color: var(--color-crypto); }
+.type-card.algo:hover { border-color: var(--color-algo); }
+.type-card.commodity:hover { border-color: var(--color-commodity); }
+
+.type-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  margin-bottom: var(--space-5);
+}
+
+.fiat .type-icon { background: color-mix(in oklab, var(--color-fiat) 15%, transparent); }
+.crypto .type-icon { background: color-mix(in oklab, var(--color-crypto) 15%, transparent); }
+.algo .type-icon { background: color-mix(in oklab, var(--color-algo) 15%, transparent); }
+.commodity .type-icon { background: color-mix(in oklab, var(--color-commodity) 15%, transparent); }
+
+.type-tag {
+  display: inline-block;
+  padding: 2px var(--space-3);
+  border-radius: var(--radius-full);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: var(--space-3);
+}
+
+.fiat .type-tag { background: color-mix(in oklab, var(--color-fiat) 15%, transparent); color: var(--color-fiat); }
+.crypto .type-tag { background: color-mix(in oklab, var(--color-crypto) 15%, transparent); color: var(--color-crypto); }
+.algo .type-tag { background: color-mix(in oklab, var(--color-algo) 15%, transparent); color: var(--color-algo); }
+.commodity .type-tag { background: color-mix(in oklab, var(--color-commodity) 15%, transparent); color: var(--color-commodity); }
+
+.type-card h3 {
+  font-size: var(--text-lg);
+  font-weight: 800;
+  margin-bottom: var(--space-3);
+  letter-spacing: -0.02em;
+}
+
+.type-card p {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-5);
+  line-height: 1.65;
+}
+
+.type-examples {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-bottom: var(--space-5);
+}
+
+.coin-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-md);
+  background: var(--color-surface-offset);
+  border: 1px solid var(--color-border);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  font-family: var(--font-display);
+  color: var(--color-text);
+}
+
+.coin-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+
+.type-metrics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3);
+  border-top: 1px solid var(--color-divider);
+  padding-top: var(--space-5);
+}
+
+.metric-item { }
+.metric-label { font-size: var(--text-xs); color: var(--color-text-faint); margin-bottom: 2px; }
+.metric-val { font-size: var(--text-sm); font-weight: 700; font-family: var(--font-display); color: var(--color-text); }
+
+.pros-cons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3);
+  margin-top: var(--space-5);
+}
+
+.pros, .cons {
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+}
+
+.pros { background: color-mix(in oklab, #22c55e 8%, transparent); }
+.cons { background: color-mix(in oklab, #ef4444 8%, transparent); }
+
+.pros-label, .cons-label {
+  font-size: var(--text-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: var(--space-2);
+}
+.pros-label { color: #22c55e; }
+.cons-label { color: #ef4444; }
+
+.pros ul, .cons ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.pros li, .cons li {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  padding-left: var(--space-4);
+  position: relative;
+}
+
+.pros li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #22c55e;
+  font-weight: 700;
+}
+.cons li::before {
+  content: '✗';
+  position: absolute;
+  left: 0;
+  color: #ef4444;
+  font-weight: 700;
+}
+
+/* ===== HOW IT WORKS ===== */
+.mechanism-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-4);
+}
+
+.mechanism-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+.mechanism-card:hover {
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-md);
+}
+
+.step-num {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-full);
+  background: var(--color-primary);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: var(--text-sm);
+  margin-bottom: var(--space-4);
+}
+
+.mechanism-card h4 {
+  font-size: var(--text-base);
+  font-weight: 700;
+  margin-bottom: var(--space-2);
+}
+
+.mechanism-card p {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+/* Flow diagram */
+.flow-diagram {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-8);
+  margin-top: var(--space-8);
+}
+
+.flow-title {
+  font-size: var(--text-base);
+  font-weight: 700;
+  margin-bottom: var(--space-6);
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: var(--text-xs);
+}
+
+.flow-steps {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flow-node {
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4) var(--space-5);
+  text-align: center;
+  min-width: 120px;
+  transition: border-color var(--transition);
+}
+.flow-node:hover { border-color: var(--color-primary); }
+
+.flow-node-icon { font-size: 1.5rem; margin-bottom: var(--space-2); }
+.flow-node-title { font-size: var(--text-xs); font-weight: 700; color: var(--color-text); margin-bottom: 2px; }
+.flow-node-sub { font-size: var(--text-xs); color: var(--color-text-faint); }
+
+.flow-arrow {
+  color: var(--color-text-faint);
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+/* ===== MAJOR COINS TABLE ===== */
+.coins-table-wrap {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+}
+
+.coins-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.coins-table th {
+  font-size: var(--text-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-faint);
+  padding: var(--space-4) var(--space-6);
+  text-align: left;
+  border-bottom: 1px solid var(--color-divider);
+  background: var(--color-surface-offset);
+}
+
+.coins-table td {
+  padding: var(--space-5) var(--space-6);
+  font-size: var(--text-sm);
+  color: var(--color-text);
+  border-bottom: 1px solid var(--color-divider);
+  vertical-align: middle;
+}
+
+.coins-table tr:last-child td { border-bottom: none; }
+.coins-table tr:hover td { background: var(--color-surface-offset); }
+
+.coin-name-cell { display: flex; align-items: center; gap: var(--space-3); }
+.coin-symbol-circle {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 800;
+  flex-shrink: 0;
+  font-family: var(--font-display);
+}
+.coin-full-name { font-size: var(--text-xs); color: var(--color-text-faint); }
+.coin-ticker { font-weight: 700; font-family: var(--font-display); }
+
+.mktcap-bar-wrap {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.mktcap-bar-bg {
+  width: 100px;
+  height: 6px;
+  border-radius: var(--radius-full);
+  background: var(--color-surface-offset);
+  overflow: hidden;
+}
+
+.mktcap-bar-fill {
+  height: 100%;
+  border-radius: var(--radius-full);
+}
+
+.mktcap-val { font-weight: 700; font-family: var(--font-display); }
+
+.risk-badge {
+  display: inline-block;
+  padding: 2px var(--space-3);
+  border-radius: var(--radius-full);
+  font-size: var(--text-xs);
+  font-weight: 700;
+}
+
+.risk-low { background: color-mix(in oklab, #22c55e 15%, transparent); color: #22c55e; }
+.risk-mid { background: color-mix(in oklab, #f59e0b 15%, transparent); color: #f59e0b; }
+.risk-high { background: color-mix(in oklab, #ef4444 15%, transparent); color: #ef4444; }
+
+/* ===== REGULATION ===== */
+.reg-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-5);
+  margin-bottom: var(--space-8);
+}
+
+.reg-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-6);
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+.reg-card:hover { border-color: var(--color-primary); box-shadow: var(--shadow-md); }
+
+.reg-flag { font-size: 1.8rem; margin-bottom: var(--space-3); }
+.reg-country { font-size: var(--text-base); font-weight: 800; margin-bottom: var(--space-2); font-family: var(--font-display); }
+.reg-law {
+  display: inline-block;
+  padding: 2px var(--space-3);
+  border-radius: var(--radius-full);
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  margin-bottom: var(--space-4);
+}
+.reg-desc { font-size: var(--text-sm); color: var(--color-text-muted); line-height: 1.65; margin-bottom: var(--space-4); }
+
+.reg-points { list-style: none; display: flex; flex-direction: column; gap: var(--space-2); }
+.reg-points li {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  padding-left: var(--space-5);
+  position: relative;
+}
+.reg-points li::before {
+  content: '›';
+  position: absolute;
+  left: var(--space-2);
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+/* Japan highlight */
+.japan-highlight {
+  background: linear-gradient(135deg,
+    color-mix(in oklab, var(--color-primary) 8%, var(--color-surface)),
+    color-mix(in oklab, var(--color-accent) 5%, var(--color-surface))
+  );
+  border: 1px solid var(--color-primary);
+  border-radius: var(--radius-xl);
+  padding: var(--space-8);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-8);
+  align-items: start;
+}
+
+.japan-left h3 {
+  font-size: var(--text-lg);
+  font-weight: 800;
+  margin-bottom: var(--space-2);
+  letter-spacing: -0.02em;
+}
+.japan-left p { font-size: var(--text-sm); color: var(--color-text-muted); line-height: 1.7; }
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.timeline-item {
+  display: flex;
+  gap: var(--space-4);
+  padding-bottom: var(--space-5);
+  position: relative;
+}
+
+.timeline-item:last-child { padding-bottom: 0; }
+
+.timeline-line {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.timeline-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  flex-shrink: 0;
+}
+
+.timeline-connector {
+  flex: 1;
+  width: 2px;
+  background: var(--color-divider);
+  margin-top: 3px;
+}
+
+.timeline-item:last-child .timeline-connector { display: none; }
+
+.timeline-content { padding-top: 0; }
+.timeline-date {
+  font-size: var(--text-xs);
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 2px;
+}
+.timeline-event { font-size: var(--text-sm); font-weight: 600; color: var(--color-text); margin-bottom: 2px; }
+.timeline-note { font-size: var(--text-xs); color: var(--color-text-muted); }
+
+/* ===== USECASES ===== */
+.usecases-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-5);
+}
+
+.usecase-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-6);
+  transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
+}
+.usecase-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-md);
+}
+
+.usecase-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-lg);
+  background: var(--color-primary-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: var(--space-5);
+}
+
+.usecase-card h4 {
+  font-size: var(--text-base);
+  font-weight: 800;
+  margin-bottom: var(--space-3);
+  letter-spacing: -0.01em;
+}
+
+.usecase-card p {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  line-height: 1.65;
+  margin-bottom: var(--space-4);
+}
+
+.usecase-stat {
+  background: var(--color-surface-offset);
+  border-radius: var(--radius-md);
+  padding: var(--space-3) var(--space-4);
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+}
+
+.usecase-stat strong {
+  color: var(--color-primary);
+  font-family: var(--font-display);
+  font-weight: 800;
+}
+
+/* ===== RISKS ===== */
+.risks-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-5);
+}
+
+.risk-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  display: flex;
+  gap: var(--space-5);
+  align-items: flex-start;
+  transition: border-color var(--transition);
+}
+.risk-card:hover { border-color: var(--color-algo); }
+
+.risk-icon-wrap {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  background: color-mix(in oklab, var(--color-algo) 12%, transparent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.risk-content h4 { font-size: var(--text-base); font-weight: 700; margin-bottom: var(--space-2); }
+.risk-content p { font-size: var(--text-sm); color: var(--color-text-muted); line-height: 1.65; }
+
+/* ===== COMPARISON TABLE ===== */
+.compare-table-wrap {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+}
+
+.compare-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.compare-table th {
+  background: var(--color-surface-offset);
+  padding: var(--space-4) var(--space-5);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-faint);
+  text-align: left;
+  border-bottom: 1px solid var(--color-divider);
+}
+
+.compare-table th:first-child {
+  min-width: 160px;
+}
+
+.compare-table td {
+  padding: var(--space-4) var(--space-5);
+  font-size: var(--text-sm);
+  color: var(--color-text);
+  border-bottom: 1px solid var(--color-divider);
+  vertical-align: middle;
+}
+
+.compare-table tr:last-child td { border-bottom: none; }
+.compare-table tr:hover td { background: var(--color-surface-offset); }
+
+.compare-table td:first-child {
+  font-weight: 700;
+  color: var(--color-text-muted);
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.check-yes { color: #22c55e; font-weight: 700; }
+.check-no { color: #ef4444; font-weight: 700; }
+.check-mid { color: #f59e0b; font-weight: 700; }
+
+/* ===== FUTURE ===== */
+.future-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-5);
+}
+
+.future-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-6);
+  position: relative;
+  overflow: hidden;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.future-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); }
+
+.future-card-year {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 5vw, 5rem);
+  font-weight: 900;
+  color: var(--color-border);
+  position: absolute;
+  top: var(--space-4);
+  right: var(--space-5);
+  line-height: 1;
+  pointer-events: none;
+  letter-spacing: -0.05em;
+}
+
+.future-card-content { position: relative; z-index: 1; }
+.future-card-tag {
+  display: inline-block;
+  padding: 2px var(--space-3);
+  border-radius: var(--radius-full);
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  margin-bottom: var(--space-4);
+}
+.future-card h4 { font-size: var(--text-base); font-weight: 800; margin-bottom: var(--space-3); }
+.future-card p { font-size: var(--text-sm); color: var(--color-text-muted); line-height: 1.65; }
+
+/* ===== GLOSSARY ===== */
+.glossary-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-4);
+}
+
+.glossary-item {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  transition: border-color var(--transition);
+}
+.glossary-item:hover { border-color: var(--color-primary); }
+
+.glossary-term {
+  font-family: var(--font-display);
+  font-size: var(--text-base);
+  font-weight: 800;
+  color: var(--color-primary);
+  margin-bottom: var(--space-2);
+  letter-spacing: -0.01em;
+}
+.glossary-def { font-size: var(--text-sm); color: var(--color-text-muted); line-height: 1.65; }
+
+/* ===== FOOTER ===== */
+footer {
+  border-top: 1px solid var(--color-divider);
+  padding: var(--space-8) 0;
+  margin-top: var(--space-16);
+}
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.footer-note { font-size: var(--text-xs); color: var(--color-text-faint); }
+
+/* ===== TOC SIDEBAR (desktop) ===== */
+.page-with-toc {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: var(--space-12);
+  align-items: start;
+}
+
+.toc {
+  position: sticky;
+  top: 80px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+}
+
+.toc-title {
+  font-size: var(--text-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-text-faint);
+  margin-bottom: var(--space-4);
+}
+
+.toc-list { list-style: none; display: flex; flex-direction: column; gap: var(--space-2); }
+.toc-list a {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  display: block;
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-sm);
+  transition: all var(--transition);
+  line-height: 1.4;
+}
+.toc-list a:hover {
+  background: var(--color-surface-offset);
+  color: var(--color-text);
+}
+.toc-list a.active {
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .hero-grid { grid-template-columns: 1fr; }
+  .hero-visual { display: none; }
+  .types-grid { grid-template-columns: 1fr; }
+  .mechanism-grid { grid-template-columns: 1fr 1fr; }
+  .reg-grid { grid-template-columns: 1fr; }
+  .japan-highlight { grid-template-columns: 1fr; }
+  .usecases-grid { grid-template-columns: 1fr 1fr; }
+  .risks-grid { grid-template-columns: 1fr; }
+  .future-cards { grid-template-columns: 1fr 1fr; }
+  .glossary-grid { grid-template-columns: 1fr; }
+  .page-with-toc { grid-template-columns: 1fr; }
+  .toc { display: none; }
+  .nav-links { display: none; }
+}
+
+@media (max-width: 600px) {
+  .hero-stats { grid-template-columns: 1fr 1fr; }
+  .mechanism-grid { grid-template-columns: 1fr; }
+  .usecases-grid { grid-template-columns: 1fr; }
+  .future-cards { grid-template-columns: 1fr; }
+  .pros-cons { grid-template-columns: 1fr; }
+  .type-metrics { grid-template-columns: 1fr; }
+  .mktcap-bar-wrap { flex-direction: column; align-items: flex-start; gap: 4px; }
+  .mktcap-bar-bg { width: 80px; }
+}
+
+/* ===== DIVIDER ===== */
+.section-divider {
+  border: none;
+  border-top: 1px solid var(--color-divider);
+  margin: 0;
+}
+
+/* highlight box */
+.info-box {
+  background: var(--color-primary-light);
+  border: 1px solid color-mix(in oklab, var(--color-primary) 30%, transparent);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5) var(--space-6);
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  line-height: 1.7;
+  margin-top: var(--space-8);
+}
+
+.info-box strong { color: var(--color-primary); }
+</style>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+  <div class="container">
+    <nav class="nav-inner">
+      <!-- SVG Logo -->
+      <a href="#" class="nav-logo">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="ステーブルコインガイド ロゴ">
+          <rect width="28" height="28" rx="7" fill="var(--color-primary)"/>
+          <circle cx="14" cy="14" r="7" stroke="white" stroke-width="2" fill="none"/>
+          <text x="14" y="18" text-anchor="middle" fill="white" font-size="9" font-weight="800" font-family="sans-serif">$</text>
+        </svg>
+        StableCoin Guide
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#overview">概要</a></li>
+        <li><a href="#types">種類</a></li>
+        <li><a href="#coins">主要銘柄</a></li>
+        <li><a href="#regulation">規制</a></li>
+        <li><a href="#usecases">活用事例</a></li>
+        <li><a href="#risks">リスク</a></li>
+        <li><a href="#future">今後の展望</a></li>
+      </ul>
+
+      <button class="theme-toggle" data-theme-toggle aria-label="ダークモードに切り替え">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="overview">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-left">
+        <div class="hero-badge">
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor"><circle cx="5" cy="5" r="5"/></svg>
+          2026年版 完全解説
+        </div>
+        <h1>
+          <span class="accent">ステーブルコイン</span><br>
+          とは何か？
+        </h1>
+        <p class="hero-desc">
+          価格安定性を持つデジタル通貨の仕組み、種類、規制、リスク、そして金融の未来を変えるポテンシャルを、
+          プライベートエクイティ・機関投資家の視点から徹底解説。
+        </p>
+        <div class="hero-stats">
+          <div class="stat-card">
+            <div class="stat-value">$3,100億</div>
+            <div class="stat-label">市場時価総額（2026年3月）</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">27兆$</div>
+            <div class="stat-label">2024年年間取引量</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">$1兆+</div>
+            <div class="stat-label">2026年末 予測時価総額</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual: Market Share Donut -->
+      <div class="hero-visual">
+        <div class="hero-visual-inner">
+          <div class="market-cap-title">市場シェア（2026年3月）</div>
+          <div class="donut-wrap">
+            <!-- SVG Donut chart -->
+            <svg class="donut-svg" width="130" height="130" viewBox="0 0 130 130">
+              <!-- USDT 60.4% -->
+              <circle cx="65" cy="65" r="52" fill="none" stroke="var(--color-fiat)" stroke-width="18"
+                stroke-dasharray="197.7 326.7" stroke-dashoffset="81.7" transform="rotate(-90 65 65)"/>
+              <!-- USDC 24.4% -->
+              <circle cx="65" cy="65" r="52" fill="none" stroke="#22c55e" stroke-width="18"
+                stroke-dasharray="79.9 444.5" stroke-dashoffset="-116.0" transform="rotate(-90 65 65)"/>
+              <!-- DAI / others -->
+              <circle cx="65" cy="65" r="52" fill="none" stroke="var(--color-accent-2)" stroke-width="18"
+                stroke-dasharray="39.3 484.7" stroke-dashoffset="-196.0" transform="rotate(-90 65 65)"/>
+              <!-- Rest -->
+              <circle cx="65" cy="65" r="52" fill="none" stroke="var(--color-commodity)" stroke-width="18"
+                stroke-dasharray="9.8 514.2" stroke-dashoffset="-235.3" transform="rotate(-90 65 65)"/>
+              <text x="65" y="62" text-anchor="middle" fill="var(--color-text)" font-size="14" font-weight="800" font-family="sans-serif">$310B</text>
+              <text x="65" y="76" text-anchor="middle" fill="var(--color-text-faint)" font-size="9" font-family="sans-serif">Total</text>
+            </svg>
+            <div class="donut-legend">
+              <div class="legend-item">
+                <div class="legend-dot" style="background:var(--color-fiat)"></div>
+                <span class="legend-name">USDT</span>
+                <span class="legend-pct">60.4%</span>
+              </div>
+              <div class="legend-item">
+                <div class="legend-dot" style="background:#22c55e"></div>
+                <span class="legend-name">USDC</span>
+                <span class="legend-pct">24.4%</span>
+              </div>
+              <div class="legend-item">
+                <div class="legend-dot" style="background:var(--color-accent-2)"></div>
+                <span class="legend-name">DAI / USDS</span>
+                <span class="legend-pct">12.0%</span>
+              </div>
+              <div class="legend-item">
+                <div class="legend-dot" style="background:var(--color-commodity)"></div>
+                <span class="legend-name">その他</span>
+                <span class="legend-pct">3.2%</span>
+              </div>
+            </div>
+          </div>
+          <div class="market-total">
+            <span class="market-total-label">出典: Kavout, Forbes (2026年3月)</span>
+            <span class="market-total-value">合計 ~$310B</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- ===== WHAT IS ===== -->
+<section id="what-is">
+  <div class="container">
+    <div class="section-label">基礎知識</div>
+    <h2 class="section-title">ステーブルコインとは</h2>
+    <p class="section-desc">
+      特定の資産（法定通貨・暗号資産・コモディティ）に価値を連動（ペッグ）させ、
+      価格安定性を実現するように設計されたデジタル通貨の総称。ビットコインなどの
+      一般的な暗号資産と異なり、価格変動を最小化することを設計目標としている。
+    </p>
+
+    <div class="mechanism-grid">
+      <div class="mechanism-card">
+        <div class="step-num">1</div>
+        <h4>価格ペッグ機構</h4>
+        <p>1ステーブルコイン = 1米ドル（または1円など）となるよう、
+        担保資産の保有や裁定取引のインセンティブ設計によって価格を安定させる。</p>
+      </div>
+      <div class="mechanism-card">
+        <div class="step-num">2</div>
+        <h4>ブロックチェーン基盤</h4>
+        <p>Ethereum、Tronなどのブロックチェーン上にトークンとして発行・流通。
+        取引はスマートコントラクトで自動執行され、24時間365日、国境を問わずに送金可能。</p>
+      </div>
+      <div class="mechanism-card">
+        <div class="step-num">3</div>
+        <h4>法定通貨との橋渡し</h4>
+        <p>暗号資産の技術的メリット（高速・低コスト・プログラマブル）と
+        法定通貨の価格安定性を組み合わせた「デジタル決済インフラ」として機能。</p>
+      </div>
+    </div>
+
+    <!-- Flow Diagram -->
+    <div class="flow-diagram">
+      <div class="flow-title">法定通貨担保型の発行・償還フロー（例：USDC）</div>
+      <div class="flow-steps">
+        <div class="flow-node">
+          <div class="flow-node-icon">👤</div>
+          <div class="flow-node-title">ユーザー</div>
+          <div class="flow-node-sub">$1,000 USD入金</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-node">
+          <div class="flow-node-icon">🏦</div>
+          <div class="flow-node-title">発行体（Circle）</div>
+          <div class="flow-node-sub">KYC / 審査</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-node">
+          <div class="flow-node-icon">🔒</div>
+          <div class="flow-node-title">準備金保管</div>
+          <div class="flow-node-sub">現金・米国債</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-node">
+          <div class="flow-node-icon">🪙</div>
+          <div class="flow-node-title">USDC発行</div>
+          <div class="flow-node-sub">1,000 USDC</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-node">
+          <div class="flow-node-icon">⛓️</div>
+          <div class="flow-node-title">ブロックチェーン</div>
+          <div class="flow-node-sub">オンチェーン送金</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- ===== TYPES ===== -->
+<section id="types">
+  <div class="container">
+    <div class="section-label">分類</div>
+    <h2 class="section-title">4つの種類と仕組み</h2>
+    <p class="section-desc">
+      ステーブルコインは価格安定のメカニズムにより4つに大別される。
+      それぞれリスクプロファイル・分散性・資本効率が大きく異なる。
+    </p>
+
+    <div class="types-grid">
+      <!-- Fiat-backed -->
+      <div class="type-card fiat">
+        <div class="type-icon">💵</div>
+        <div class="type-tag">法定通貨担保型</div>
+        <h3>Fiat-Collateralized</h3>
+        <p>
+          USD・JPY等の法定通貨を1:1で銀行・信託口座に保有し、
+          ステーブルコインを発行。最も分かりやすく、価格安定性が高い。
+          ユーザーはいつでも法定通貨に換金できる。
+          中央集権的な発行体が存在するため、発行体リスクと規制リスクを伴う。
+        </p>
+        <div class="type-examples">
+          <span class="coin-badge"><span class="coin-dot" style="background:#26a17b"></span>USDT</span>
+          <span class="coin-badge"><span class="coin-dot" style="background:#2775ca"></span>USDC</span>
+          <span class="coin-badge"><span class="coin-dot" style="background:#e84142"></span>JPYC</span>
+          <span class="coin-badge"><span class="coin-dot" style="background:#1da462"></span>PYUSD</span>
+        </div>
+        <div class="pros-cons">
+          <div class="pros">
+            <div class="pros-label">メリット</div>
+            <ul>
+              <li>価格安定性が最高水準</li>
+              <li>透明性（定期監査）</li>
+              <li>流動性が高い</li>
+            </ul>
+          </div>
+          <div class="cons">
+            <div class="cons-label">リスク</div>
+            <ul>
+              <li>発行体への信頼依存</li>
+              <li>規制・政府凍結リスク</li>
+              <li>中央集権的</li>
+            </ul>
+          </div>
+        </div>
+        <div class="type-metrics">
+          <div class="metric-item">
+            <div class="metric-label">市場シェア</div>
+            <div class="metric-val">~85%</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-label">リスクレベル</div>
+            <div class="metric-val" style="color:var(--color-success,#22c55e)">低</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Crypto-backed -->
+      <div class="type-card crypto">
+        <div class="type-icon">⛓️</div>
+        <div class="type-tag">暗号資産担保型</div>
+        <h3>Crypto-Collateralized</h3>
+        <p>
+          ETHやBTC等の暗号資産を担保として超過担保（150%以上）でロックし、
+          スマートコントラクトがステーブルコインを発行・管理。
+          分散型で中央発行体が不要。担保価値急落時に自動清算される仕組みを持つ。
+          DeFiエコシステムの中核インフラとして機能する。
+        </p>
+        <div class="type-examples">
+          <span class="coin-badge"><span class="coin-dot" style="background:#f5ac37"></span>DAI</span>
+          <span class="coin-badge"><span class="coin-dot" style="background:#7c3aed"></span>USDS</span>
+          <span class="coin-badge"><span class="coin-dot" style="background:#1992d4"></span>crvUSD</span>
+        </div>
+        <div class="pros-cons">
+          <div class="pros">
+            <div class="pros-label">メリット</div>
+            <ul>
+              <li>分散型・非中央集権</li>
+              <li>オンチェーン透明性</li>
+              <li>発行体倒産リスク無し</li>
+            </ul>
+          </div>
+          <div class="cons">
+            <div class="cons-label">リスク</div>
+            <ul>
+              <li>担保価格暴落で清算</li>
+              <li>資本効率が低い</li>
+              <li>スマートコントラクト脆弱性</li>
+            </ul>
+          </div>
+        </div>
+        <div class="type-metrics">
+          <div class="metric-item">
+            <div class="metric-label">時価総額（DAI）</div>
+            <div class="metric-val">~$82億</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-label">リスクレベル</div>
+            <div class="metric-val" style="color:#f59e0b">中</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Algorithmic -->
+      <div class="type-card algo">
+        <div class="type-icon">⚙️</div>
+        <div class="type-tag">アルゴリズム型</div>
+        <h3>Algorithmic</h3>
+        <p>
+          担保資産を持たず、供給量を自動的に増減するアルゴリズムで価格を安定させる。
+          2022年のTerra/LUNA崩壊（約500億ドル消失）で脆弱性が露呈。
+          現在は純粋なアルゴリズム型は市場から淘汰される傾向にあり、
+          部分担保ハイブリッド型（FRAX等）に移行している。
+        </p>
+        <div class="type-examples">
+          <span class="coin-badge"><span class="coin-dot" style="background:#dc2626"></span>UST ※崩壊</span>
+          <span class="coin-badge"><span class="coin-dot" style="background:#1868b7"></span>FRAX</span>
+          <span class="coin-badge"><span class="coin-dot" style="background:#6366f1"></span>USDe</span>
+        </div>
+        <div class="pros-cons">
+          <div class="pros">
+            <div class="pros-label">メリット</div>
+            <ul>
+              <li>資本効率が高い</li>
+              <li>完全分散型が可能</li>
+              <li>スケーラビリティ</li>
+            </ul>
+          </div>
+          <div class="cons">
+            <div class="cons-label">リスク</div>
+            <ul>
+              <li>デペッグ・崩壊リスク大</li>
+              <li>Terra崩壊の前例</li>
+              <li>規制強化の標的</li>
+            </ul>
+          </div>
+        </div>
+        <div class="type-metrics">
+          <div class="metric-item">
+            <div class="metric-label">市場からの評価</div>
+            <div class="metric-val" style="color:#ef4444">要注意</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-label">リスクレベル</div>
+            <div class="metric-val" style="color:#ef4444">高</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Commodity-backed -->
+      <div class="type-card commodity">
+        <div class="type-icon">🥇</div>
+        <div class="type-tag">コモディティ担保型</div>
+        <h3>Commodity-Backed</h3>
+        <p>
+          金や原油などの実物資産を担保として発行。インフレヘッジ機能を持ち、
+          法定通貨担保型と異なる資産クラスへのエクスポージャーが得られる。
+          国内では三井物産グループのジパングコイン（ZPG）が金1グラム連動で発行。
+          流動性は法定通貨担保型より低い傾向にある。
+        </p>
+        <div class="type-examples">
+          <span class="coin-badge"><span class="coin-dot" style="background:#d97706"></span>PAXG</span>
+          <span class="coin-badge"><span class="coin-dot" style="background:#f59e0b"></span>XAUT</span>
+          <span class="coin-badge"><span class="coin-dot" style="background:#92400e"></span>ZPG（国内）</span>
+        </div>
+        <div class="pros-cons">
+          <div class="pros">
+            <div class="pros-label">メリット</div>
+            <ul>
+              <li>インフレヘッジ効果</li>
+              <li>実物資産による裏付け</li>
+              <li>法定通貨との非相関</li>
+            </ul>
+          </div>
+          <div class="cons">
+            <div class="cons-label">リスク</div>
+            <ul>
+              <li>担保価格変動リスク</li>
+              <li>流動性が低い</li>
+              <li>保管コストが発生</li>
+            </ul>
+          </div>
+        </div>
+        <div class="type-metrics">
+          <div class="metric-item">
+            <div class="metric-label">PAXG時価総額</div>
+            <div class="metric-val">~$8億</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-label">リスクレベル</div>
+            <div class="metric-val" style="color:#f59e0b">中</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- ===== MAJOR COINS ===== -->
+<section id="coins">
+  <div class="container">
+    <div class="section-label">主要銘柄</div>
+    <h2 class="section-title">主要ステーブルコイン比較</h2>
+    <p class="section-desc">
+      2026年3月時点のデータ。時価総額上位銘柄の発行体・準備金・規制対応状況を整理。
+    </p>
+    <div class="coins-table-wrap">
+      <table class="coins-table">
+        <thead>
+          <tr>
+            <th style="min-width:160px">銘柄</th>
+            <th>発行体</th>
+            <th>種類</th>
+            <th>時価総額</th>
+            <th>シェア</th>
+            <th>監査</th>
+            <th>リスク</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="coin-name-cell">
+                <div class="coin-symbol-circle" style="background:color-mix(in oklab,#26a17b 20%,var(--color-surface-offset));color:#26a17b;">USDT</div>
+                <div>
+                  <div class="coin-ticker">USDT</div>
+                  <div class="coin-full-name">Tether</div>
+                </div>
+              </div>
+            </td>
+            <td>Tether Limited</td>
+            <td><span class="type-tag" style="background:color-mix(in oklab,var(--color-fiat) 12%,transparent);color:var(--color-fiat);">法定通貨</span></td>
+            <td>
+              <div class="mktcap-bar-wrap">
+                <div class="mktcap-bar-bg">
+                  <div class="mktcap-bar-fill" style="width:100%;background:var(--color-fiat);"></div>
+                </div>
+                <span class="mktcap-val">$1,870億</span>
+              </div>
+            </td>
+            <td>60.4%</td>
+            <td>四半期証明</td>
+            <td><span class="risk-badge risk-mid">中</span></td>
+          </tr>
+          <tr>
+            <td>
+              <div class="coin-name-cell">
+                <div class="coin-symbol-circle" style="background:color-mix(in oklab,#2775ca 20%,var(--color-surface-offset));color:#2775ca;">USDC</div>
+                <div>
+                  <div class="coin-ticker">USDC</div>
+                  <div class="coin-full-name">USD Coin</div>
+                </div>
+              </div>
+            </td>
+            <td>Circle Internet</td>
+            <td><span class="type-tag" style="background:color-mix(in oklab,var(--color-fiat) 12%,transparent);color:var(--color-fiat);">法定通貨</span></td>
+            <td>
+              <div class="mktcap-bar-wrap">
+                <div class="mktcap-bar-bg">
+                  <div class="mktcap-bar-fill" style="width:40%;background:#2775ca;"></div>
+                </div>
+                <span class="mktcap-val">$756億</span>
+              </div>
+            </td>
+            <td>24.4%</td>
+            <td>月次・公認会計士</td>
+            <td><span class="risk-badge risk-low">低</span></td>
+          </tr>
+          <tr>
+            <td>
+              <div class="coin-name-cell">
+                <div class="coin-symbol-circle" style="background:color-mix(in oklab,#f5ac37 20%,var(--color-surface-offset));color:#b87a00;">DAI</div>
+                <div>
+                  <div class="coin-ticker">DAI/USDS</div>
+                  <div class="coin-full-name">MakerDAO</div>
+                </div>
+              </div>
+            </td>
+            <td>MakerDAO (分散型)</td>
+            <td><span class="type-tag" style="background:color-mix(in oklab,var(--color-crypto) 12%,transparent);color:var(--color-crypto);">暗号資産担保</span></td>
+            <td>
+              <div class="mktcap-bar-wrap">
+                <div class="mktcap-bar-bg">
+                  <div class="mktcap-bar-fill" style="width:7%;background:var(--color-crypto);"></div>
+                </div>
+                <span class="mktcap-val">~$82億</span>
+              </div>
+            </td>
+            <td>~2.6%</td>
+            <td>オンチェーン可視</td>
+            <td><span class="risk-badge risk-mid">中</span></td>
+          </tr>
+          <tr>
+            <td>
+              <div class="coin-name-cell">
+                <div class="coin-symbol-circle" style="background:color-mix(in oklab,#3c4fd8 20%,var(--color-surface-offset));color:#3c4fd8;">USD1</div>
+                <div>
+                  <div class="coin-ticker">USD1</div>
+                  <div class="coin-full-name">World Liberty Fi.</div>
+                </div>
+              </div>
+            </td>
+            <td>World Liberty Financial</td>
+            <td><span class="type-tag" style="background:color-mix(in oklab,var(--color-fiat) 12%,transparent);color:var(--color-fiat);">法定通貨</span></td>
+            <td>
+              <div class="mktcap-bar-wrap">
+                <div class="mktcap-bar-bg">
+                  <div class="mktcap-bar-fill" style="width:2%;background:#3c4fd8;"></div>
+                </div>
+                <span class="mktcap-val">$46.5億</span>
+              </div>
+            </td>
+            <td>~1.5%</td>
+            <td>準備中</td>
+            <td><span class="risk-badge risk-high">高</span></td>
+          </tr>
+          <tr>
+            <td>
+              <div class="coin-name-cell">
+                <div class="coin-symbol-circle" style="background:color-mix(in oklab,#00aeef 20%,var(--color-surface-offset));color:#00aeef;">PYUSD</div>
+                <div>
+                  <div class="coin-ticker">PYUSD</div>
+                  <div class="coin-full-name">PayPal USD</div>
+                </div>
+              </div>
+            </td>
+            <td>PayPal / Paxos</td>
+            <td><span class="type-tag" style="background:color-mix(in oklab,var(--color-fiat) 12%,transparent);color:var(--color-fiat);">法定通貨</span></td>
+            <td>
+              <div class="mktcap-bar-wrap">
+                <div class="mktcap-bar-bg">
+                  <div class="mktcap-bar-fill" style="width:1%;background:#00aeef;"></div>
+                </div>
+                <span class="mktcap-val">$15.4億</span>
+              </div>
+            </td>
+            <td>~0.5%</td>
+            <td>月次公認会計士</td>
+            <td><span class="risk-badge risk-low">低</span></td>
+          </tr>
+          <tr>
+            <td>
+              <div class="coin-name-cell">
+                <div class="coin-symbol-circle" style="background:color-mix(in oklab,#e84142 20%,var(--color-surface-offset));color:#e84142;">JPYC</div>
+                <div>
+                  <div class="coin-ticker">JPYC</div>
+                  <div class="coin-full-name">JPYC Inc. (国内初)</div>
+                </div>
+              </div>
+            </td>
+            <td>JPYC株式会社</td>
+            <td><span class="type-tag" style="background:color-mix(in oklab,var(--color-fiat) 12%,transparent);color:var(--color-fiat);">法定通貨（JPY）</span></td>
+            <td>
+              <div class="mktcap-bar-wrap">
+                <div class="mktcap-bar-bg">
+                  <div class="mktcap-bar-fill" style="width:1%;background:#e84142;"></div>
+                </div>
+                <span class="mktcap-val">拡大中</span>
+              </div>
+            </td>
+            <td>—</td>
+            <td>金融庁登録済</td>
+            <td><span class="risk-badge risk-low">低</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="info-box">
+      <strong>注目：</strong> 2026年1月、Tetherは米国GENIUS Act対応のため新銘柄「USAT」を発行。
+      一方、2025年10月にはJPYCが国内初の正式な円建てステーブルコインを発行し、
+      2025年11月にはMUFG・みずほ・SMBCの三メガバンクが信託型ステーブルコイン（Project Pax）の
+      実証実験を開始した（<a href="https://www.ledgerinsights.com/japans-big-3-bank-stablecoin-initiative-to-be-overseen-by-japanese-regulator/" target="_blank" rel="noopener">Ledger Insights</a>）。
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- ===== REGULATION ===== -->
+<section id="regulation">
+  <div class="container">
+    <div class="section-label">規制動向</div>
+    <h2 class="section-title">グローバル規制の現状</h2>
+    <p class="section-desc">
+      2025〜2026年はステーブルコイン規制の制度化が世界的に加速した年。
+      主要7カ国・地域で包括的な法的枠組みが整備されつつある。
+    </p>
+
+    <div class="reg-grid">
+      <div class="reg-card">
+        <div class="reg-flag">🇺🇸</div>
+        <div class="reg-country">米国</div>
+        <div class="reg-law">GENIUS Act（2025年7月成立）</div>
+        <p class="reg-desc">
+          米国初の連邦レベルステーブルコイン法。トランプ大統領が2025年7月18日に署名し成立。
+          銀行監督当局（OCC・FRB）が監督を担う。
+        </p>
+        <ul class="reg-points">
+          <li>1:1の準備資産（現金・短期米国債等）を義務化</li>
+          <li>月次報告・CEO/CFOによる認証義務</li>
+          <li>証券・商品（SECやCFTC対象）に該当しないと明確化</li>
+          <li>違反時：最大$1M/件の民事罰・禁固5年</li>
+          <li>議員・政府高官のステーブルコイン発行を禁止</li>
+        </ul>
+      </div>
+
+      <div class="reg-card">
+        <div class="reg-flag">🇪🇺</div>
+        <div class="reg-country">EU</div>
+        <div class="reg-law">MiCA（2024年段階実施）</div>
+        <p class="reg-desc">
+          Markets in Crypto-Assets Regulation。世界初の包括的暗号資産規制として
+          2024年6月から段階実施、同年12月に全面施行。
+        </p>
+        <ul class="reg-points">
+          <li>ARTとEMTを厳格に定義・規制</li>
+          <li>発行額が大きいほど厳格な準備要件</li>
+          <li>認可制度（ライセンス義務）</li>
+          <li>EU域内統一フレームワーク</li>
+        </ul>
+      </div>
+
+      <div class="reg-card">
+        <div class="reg-flag">🇭🇰</div>
+        <div class="reg-country">香港</div>
+        <div class="reg-law">Stablecoins Ordinance（2025年8月施行）</div>
+        <p class="reg-desc">
+          香港金融管理局（HKMA）が監督。法定通貨裏付けステーブルコインの
+          発行・流通に包括的な許可制度を導入。
+        </p>
+        <ul class="reg-points">
+          <li>フル準備義務・分別管理</li>
+          <li>AML・サイバーセキュリティ基準</li>
+          <li>消費者救済メカニズム義務</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Japan Highlight -->
+    <div class="japan-highlight">
+      <div class="japan-left">
+        <div class="section-label" style="margin-bottom: var(--space-3);">🇯🇵 日本の規制詳細</div>
+        <h3>改正資金決済法（2023年6月施行）</h3>
+        <p style="margin-bottom: var(--space-5);">
+          日本は世界に先駆けてステーブルコインの法的枠組みを整備した先進国の一つ。
+          改正資金決済法により「電子決済手段」という新概念が創設され、
+          ステーブルコインが暗号資産（仮想通貨）とは法的に区別された。
+        </p>
+        <p>
+          発行できるのは<strong>銀行・資金移動業者・信託会社</strong>に限定。
+          流通仲介業者は金融庁への登録が必須。
+          準備金は現金・高安全性資産のみ、発行体自己資金とは分別管理が必要。
+        </p>
+        <br>
+        <p style="font-size:var(--text-xs);color:var(--color-text-faint);">
+          出典：<a href="https://www.fsa.go.jp/frtc/kikou/2025/20260201_syouken.pdf" target="_blank" rel="noopener">金融庁 (2026年2月)</a>、
+          <a href="https://www.nri.com/jp/media/column/kiuchi/20250905_2.html" target="_blank" rel="noopener">野村総合研究所 (2025年9月)</a>
+        </p>
+      </div>
+      <div class="japan-right">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-line">
+              <div class="timeline-dot"></div>
+              <div class="timeline-connector"></div>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-date">2022年6月</div>
+              <div class="timeline-event">改正資金決済法 参院可決</div>
+              <div class="timeline-note">「電子決済手段」概念の新設</div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-line">
+              <div class="timeline-dot"></div>
+              <div class="timeline-connector"></div>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-date">2023年6月</div>
+              <div class="timeline-event">改正法 全面施行</div>
+              <div class="timeline-note">世界最初期の法整備完了</div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-line">
+              <div class="timeline-dot"></div>
+              <div class="timeline-connector"></div>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-date">2025年6月〜7月</div>
+              <div class="timeline-event">信託型ステーブルコイン管理要件緩和</div>
+              <div class="timeline-note">資金決済法追加改正</div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-line">
+              <div class="timeline-dot"></div>
+              <div class="timeline-connector"></div>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-date">2025年10月</div>
+              <div class="timeline-event">JPYC 国内初の円建てステーブルコイン正式発行</div>
+              <div class="timeline-note">資金移動業者ライセンスで発行</div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-line">
+              <div class="timeline-dot"></div>
+              <div class="timeline-connector"></div>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-date">2025年11月</div>
+              <div class="timeline-event">三メガバンク Project Pax 実証実験開始</div>
+              <div class="timeline-note">MUFG・みずほ・SMBC、金融庁指定プロジェクト</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- ===== USECASES ===== -->
+<section id="usecases">
+  <div class="container">
+    <div class="section-label">活用事例</div>
+    <h2 class="section-title">主要ユースケース</h2>
+    <p class="section-desc">
+      ステーブルコインは決済インフラとして急速に普及しており、
+      従来の金融システムを補完・代替する多様な活用が広がっている。
+    </p>
+
+    <div class="usecases-grid">
+      <div class="usecase-card">
+        <div class="usecase-icon">🌐</div>
+        <h4>クロスボーダー決済</h4>
+        <p>
+          SWIFT経由の国際送金は3〜5営業日、手数料3〜5%かかるのに対し、
+          ステーブルコイン送金は数分で完了し、コストは最大80%削減可能。
+          新興国向け送金・企業間決済で急速に普及中。
+        </p>
+        <div class="usecase-stat">
+          コスト削減: <strong>最大80%</strong> ／ 世界クロスボーダー取引の <strong>3%</strong> をステーブルコインが占有
+        </div>
+      </div>
+
+      <div class="usecase-card">
+        <div class="usecase-icon">🏦</div>
+        <h4>DeFi（分散型金融）</h4>
+        <p>
+          AaveやCompoundなどのレンディングプロトコルで担保として利用。
+          USDCやDAIを預けることで年利数%の利息を獲得可能。
+          中央取引所取引の80%以上でステーブルコインが取引ペアに使用。
+        </p>
+        <div class="usecase-stat">
+          取引所の <strong>80%超</strong> でステーブルコインが取引ペア（出典: FRB）
+        </div>
+      </div>
+
+      <div class="usecase-card">
+        <div class="usecase-icon">💹</div>
+        <h4>資本市場・決済清算</h4>
+        <p>
+          債券・ファンド・その他証券の購入・決済にステーブルコインが活用。
+          BlackRockのBUIDLとUSDCの連携など、機関投資家向けトークン化資産の
+          決済手段として採用が拡大。
+        </p>
+        <div class="usecase-stat">
+          世界資本市場取引の <strong>約1%</strong> をステーブルコイン決済が占有
+        </div>
+      </div>
+
+      <div class="usecase-card">
+        <div class="usecase-icon">🏭</div>
+        <h4>企業間決済・サプライチェーン</h4>
+        <p>
+          三菱商事がProject Paxを通じ国内外子会社間決済にステーブルコインを試験活用。
+          SMBCグループも法人決済での活用を推進。
+          取引の透明性向上と決済タスクの大幅削減が期待されている。
+        </p>
+        <div class="usecase-stat">
+          <strong>三菱商事・SMBC・MUFG・みずほ</strong> が実証実験参加
+        </div>
+      </div>
+
+      <div class="usecase-card">
+        <div class="usecase-icon">🛡️</div>
+        <h4>インフレヘッジ・資産退避</h4>
+        <p>
+          自国通貨が急落している新興国（アルゼンチン・トルコ等）では、
+          USDTがドル資産保全の手段として市民の間で普及。
+          法定通貨制度が不安定な地域で金融包摂の役割を担う。
+        </p>
+        <div class="usecase-stat">
+          アルゼンチン・トルコなど <strong>高インフレ国</strong> での需要が急増
+        </div>
+      </div>
+
+      <div class="usecase-card">
+        <div class="usecase-icon">📲</div>
+        <h4>消費者決済・Web3</h4>
+        <p>
+          PayPalのPYUSD統合によりVenmo・PayPalユーザーが日常決済でステーブルコインを利用可能に。
+          国内でもJPYCを活用した法人決済・Web3サービスとの連携が活発化。
+        </p>
+        <div class="usecase-stat">
+          PYUSD月次取引数: <strong>590万件</strong>（2025年Q4）
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- ===== TYPE COMPARISON ===== -->
+<section id="compare">
+  <div class="container">
+    <div class="section-label">比較</div>
+    <h2 class="section-title">ステーブルコイン vs 従来手段</h2>
+    <p class="section-desc">
+      ステーブルコインと既存の決済・金融手段との比較。
+    </p>
+    <div class="compare-table-wrap">
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th>比較軸</th>
+            <th>ステーブルコイン<br>(法定通貨担保型)</th>
+            <th>CBDC<br>(中央銀行デジタル通貨)</th>
+            <th>銀行預金</th>
+            <th>暗号資産<br>(BTC/ETH等)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>価格安定性</td>
+            <td><span class="check-yes">◎ 高い</span></td>
+            <td><span class="check-yes">◎ 高い</span></td>
+            <td><span class="check-yes">◎ 高い</span></td>
+            <td><span class="check-no">✗ 低い</span></td>
+          </tr>
+          <tr>
+            <td>決済速度</td>
+            <td><span class="check-yes">◎ 数秒〜数分</span></td>
+            <td><span class="check-yes">◎ 即時</span></td>
+            <td><span class="check-mid">△ 数時間〜翌営業日</span></td>
+            <td><span class="check-mid">△ 数秒〜数分</span></td>
+          </tr>
+          <tr>
+            <td>国際送金コスト</td>
+            <td><span class="check-yes">◎ 極めて低い</span></td>
+            <td><span class="check-yes">◎ 低い</span></td>
+            <td><span class="check-no">✗ 高い（3〜5%）</span></td>
+            <td><span class="check-mid">△ ガス代が変動</span></td>
+          </tr>
+          <tr>
+            <td>プログラマビリティ</td>
+            <td><span class="check-yes">◎ 高い</span></td>
+            <td><span class="check-mid">△ 設計次第</span></td>
+            <td><span class="check-no">✗ 限定的</span></td>
+            <td><span class="check-yes">◎ 高い</span></td>
+          </tr>
+          <tr>
+            <td>預金保護</td>
+            <td><span class="check-no">✗ なし</span></td>
+            <td><span class="check-yes">◎ 国が保証</span></td>
+            <td><span class="check-yes">◎ 1,000万円まで保護</span></td>
+            <td><span class="check-no">✗ なし</span></td>
+          </tr>
+          <tr>
+            <td>プライバシー</td>
+            <td><span class="check-mid">△ 中程度</span></td>
+            <td><span class="check-no">✗ 政府管理</span></td>
+            <td><span class="check-mid">△ 銀行管理</span></td>
+            <td><span class="check-yes">◎ 高い</span></td>
+          </tr>
+          <tr>
+            <td>DeFi連携</td>
+            <td><span class="check-yes">◎ 可能</span></td>
+            <td><span class="check-no">✗ 困難</span></td>
+            <td><span class="check-no">✗ 不可</span></td>
+            <td><span class="check-yes">◎ 可能</span></td>
+          </tr>
+          <tr>
+            <td>規制リスク</td>
+            <td><span class="check-mid">△ 規制整備中</span></td>
+            <td><span class="check-yes">◎ 国が発行</span></td>
+            <td><span class="check-yes">◎ 完全規制下</span></td>
+            <td><span class="check-high risk-high">高</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- ===== RISKS ===== -->
+<section id="risks">
+  <div class="container">
+    <div class="section-label">リスク分析</div>
+    <h2 class="section-title">主要リスクと留意点</h2>
+    <p class="section-desc">
+      機関投資家・PE視点で押さえておくべきステーブルコイン固有のリスクファクター。
+    </p>
+
+    <div class="risks-grid">
+      <div class="risk-card">
+        <div class="risk-icon-wrap">🏦</div>
+        <div class="risk-content">
+          <h4>発行体リスク（カウンターパーティリスク）</h4>
+          <p>
+            法定通貨担保型は発行体の財務健全性に依存。準備金の組成・透明性・監査体制が
+            不十分な場合、ペッグ崩壊リスクがある。USDTは過去に準備金の透明性について
+            議論があった。2023年のシリコンバレー銀行破綻時にはUSDCが一時0.87ドルまで下落した。
+          </p>
+        </div>
+      </div>
+
+      <div class="risk-card">
+        <div class="risk-icon-wrap">⚙️</div>
+        <div class="risk-content">
+          <h4>デペッグリスク（価格維持機能の崩壊）</h4>
+          <p>
+            2022年5月のTerra/LUNA崩壊は最大の実例。約500億ドルが1週間で消失。
+            大量売却によりペッグが外れ、姉妹トークンとの負のスパイラルで崩壊。
+            法定通貨担保型でも発行体財務不安・市場パニック時に一時的デペッグが発生しうる。
+          </p>
+        </div>
+      </div>
+
+      <div class="risk-card">
+        <div class="risk-icon-wrap">📜</div>
+        <div class="risk-content">
+          <h4>規制・法的リスク</h4>
+          <p>
+            各国規制の急激な変化、政府による資産凍結・取引制限のリスク。
+            GENIUS Actは大手テクノロジー企業（金融業非主体）の発行を制限。
+            また、選出議員の発行禁止条項など、政治的リスクとの交差も存在。
+          </p>
+        </div>
+      </div>
+
+      <div class="risk-card">
+        <div class="risk-icon-wrap">🔐</div>
+        <div class="risk-content">
+          <h4>スマートコントラクト・技術リスク</h4>
+          <p>
+            暗号資産担保型・アルゴリズム型はスマートコントラクトの脆弱性によるハッキング・
+            バグリスクを持つ。ブリッジプロトコルの脆弱性も重大な損失を引き起こした前例あり。
+            オラクル操作による不正な担保評価も懸念事項。
+          </p>
+        </div>
+      </div>
+
+      <div class="risk-card">
+        <div class="risk-icon-wrap">💧</div>
+        <div class="risk-content">
+          <h4>流動性リスク</h4>
+          <p>
+            市場ストレス時に換金ニーズが集中した場合、準備金管理に問題がある発行体は
+            大量償還要求に応えられない可能性がある。特に準備金の一部を流動性の低い資産で
+            運用している場合は注意が必要。取り付け騒ぎ（バンクラン）のリスクが内在する。
+          </p>
+        </div>
+      </div>
+
+      <div class="risk-card">
+        <div class="risk-icon-wrap">🌐</div>
+        <div class="risk-content">
+          <h4>マクロ・地政学リスク</h4>
+          <p>
+            米ドル連動型ステーブルコインは米国の金融政策・制裁の直接的影響を受ける。
+            ドル安局面での購買力低下、米国制裁対象国・個人へのアクセス遮断など、
+            地政学的要因が価値・利用可能性に影響する。
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- ===== FUTURE ===== -->
+<section id="future">
+  <div class="container">
+    <div class="section-label">今後の展望</div>
+    <h2 class="section-title">ステーブルコインの未来</h2>
+    <p class="section-desc">
+      規制整備の完了とともに機関採用が加速し、金融インフラの根幹を変える段階へ。
+    </p>
+
+    <div class="future-cards">
+      <div class="future-card">
+        <div class="future-card-year">26</div>
+        <div class="future-card-content">
+          <div class="future-card-tag">短期（2026年）</div>
+          <h4>1兆ドル市場へ</h4>
+          <p>
+            現在の$3,100億から2026年末には$1兆超が予測される。
+            GENIUS Act実施規則の整備（1年以内に公表必要）により
+            米国機関投資家の本格参入が加速。JPYCの1兆円発行目標、
+            三メガバンクステーブルコインの本格展開が見込まれる。
+          </p>
+        </div>
+      </div>
+
+      <div class="future-card">
+        <div class="future-card-year">28</div>
+        <div class="future-card-content">
+          <div class="future-card-tag">中期（2027〜2028年）</div>
+          <h4>決済インフラの標準化</h4>
+          <p>
+            SWIFT代替としてのステーブルコイン送金が主要貿易路で定着。
+            RWA（現実資産トークン化）の決済レイヤーとしての役割が拡大。
+            CBDCとステーブルコインの相互運用性確立が進み、
+            銀行システムとのシームレスな接続が実現する段階へ。
+          </p>
+        </div>
+      </div>
+
+      <div class="future-card">
+        <div class="future-card-year">30</div>
+        <div class="future-card-content">
+          <div class="future-card-tag">長期（2030年以降）</div>
+          <h4>金融のプログラマブル化</h4>
+          <p>
+            スマートコントラクトと組み合わせたプログラマブルマネーが
+            企業財務・資本市場オペレーションの標準になる可能性。
+            カード決済・銀行送金を超える規模へ成長し、
+            JPYCが言及するように「VISAの決済額を上回る」規模も視野に入る。
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- ===== GLOSSARY ===== -->
+<section id="glossary">
+  <div class="container">
+    <div class="section-label">用語集</div>
+    <h2 class="section-title">主要用語解説</h2>
+    <p class="section-desc">ステーブルコインを理解するための重要用語。</p>
+
+    <div class="glossary-grid">
+      <div class="glossary-item">
+        <div class="glossary-term">ペッグ（Peg）</div>
+        <div class="glossary-def">特定の資産（主に米ドル）に価格を連動させること。1USDT = $1.00 を維持する仕組み。</div>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">デペッグ（De-peg）</div>
+        <div class="glossary-def">価格が目標値から外れること。市場パニックや発行体問題が引き金になる。Terra崩壊が最大の事例。</div>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">超過担保（Over-collateral）</div>
+        <div class="glossary-def">暗号資産担保型で採用される仕組み。発行額の150〜200%の担保を積むことで価格変動に耐える。</div>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">電子決済手段</div>
+        <div class="glossary-def">日本の資金決済法における法的定義。法定通貨を裏付けとするステーブルコインがこれに該当する。</div>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">DeFi（分散型金融）</div>
+        <div class="glossary-def">スマートコントラクトで構築された、中央管理者不要の金融プロトコル群。レンディング・DEX等が含まれる。</div>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">スマートコントラクト</div>
+        <div class="glossary-def">条件が満たされると自動的に実行されるプログラム。ブロックチェーン上に記録され、改ざん不可。</div>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">準備金（Reserves）</div>
+        <div class="glossary-def">ステーブルコインの価値を裏付ける資産。GENIUS Actは現金・短期米国債等に限定している。</div>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">RWA（実物資産トークン化）</div>
+        <div class="glossary-def">不動産・債券・コモディティ等をブロックチェーン上のトークンとして表現すること。ステーブルコインが決済手段として機能。</div>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">GENIUS Act</div>
+        <div class="glossary-def">Guiding and Establishing National Innovation for U.S. Stablecoins Act。2025年7月に米国初の連邦ステーブルコイン法として成立。</div>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">CBDC</div>
+        <div class="glossary-def">Central Bank Digital Currency（中央銀行デジタル通貨）。中央銀行が発行するデジタル法定通貨。日銀も研究中。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-note">
+        本資料は情報提供を目的としており、投資助言ではありません。データは2026年3月時点。<br>
+        出典: <a href="https://www.fsa.go.jp/" target="_blank" rel="noopener">金融庁</a> /
+        <a href="https://www.whitehouse.gov/fact-sheets/2025/07/fact-sheet-president-donald-j-trump-signs-genius-act-into-law/" target="_blank" rel="noopener">White House (GENIUS Act)</a> /
+        <a href="https://www.kavout.com/market-lens/how-is-the-stablecoin-landscape-shifting-in-2026" target="_blank" rel="noopener">Kavout (2026年3月)</a> /
+        <a href="https://www.nttdata.com/jp/ja/trends/data-insight/2026/0210/" target="_blank" rel="noopener">NTTデータ</a> /
+        <a href="https://bvnk.com/blog/global-stablecoin-regulations-2026" target="_blank" rel="noopener">BVNK</a>
+      </div>
+      <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer"
+        style="font-size:var(--text-xs);color:var(--color-text-faint);">
+        Created with Perplexity Computer
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Theme toggle
+(function(){
+  const t = document.querySelector('[data-theme-toggle]');
+  const r = document.documentElement;
+  let d = r.getAttribute('data-theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  r.setAttribute('data-theme', d);
+
+  const sunIcon = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>';
+  const moonIcon = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+
+  if(t) {
+    t.innerHTML = d === 'dark' ? sunIcon : moonIcon;
+    t.setAttribute('aria-label', d === 'dark' ? 'ライトモードに切り替え' : 'ダークモードに切り替え');
+    t.addEventListener('click', () => {
+      d = d === 'dark' ? 'light' : 'dark';
+      r.setAttribute('data-theme', d);
+      t.innerHTML = d === 'dark' ? sunIcon : moonIcon;
+      t.setAttribute('aria-label', d === 'dark' ? 'ライトモードに切り替え' : 'ダークモードに切り替え');
+    });
+  }
+})();
+
+// TOC active link (if sidebar added)
+const sections = document.querySelectorAll('section[id]');
+const tocLinks = document.querySelectorAll('.toc-list a');
+if(tocLinks.length) {
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if(e.isIntersecting) {
+        tocLinks.forEach(l => l.classList.remove('active'));
+        const active = document.querySelector(`.toc-list a[href="#${e.target.id}"]`);
+        if(active) active.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-20% 0% -60% 0%' });
+  sections.forEach(s => obs.observe(s));
+}
+
+// Scroll animations
+const animEls = document.querySelectorAll('.type-card, .mechanism-card, .reg-card, .usecase-card, .risk-card, .future-card, .glossary-item, .stat-card');
+const animObs = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if(e.isIntersecting) {
+      e.target.style.opacity = '1';
+      e.target.style.transform = 'translateY(0)';
+      animObs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.08 });
+
+animEls.forEach((el, i) => {
+  el.style.opacity = '0';
+  el.style.transform = 'translateY(16px)';
+  el.style.transition = `opacity 0.45s ease ${i * 0.05}s, transform 0.45s ease ${i * 0.05}s`;
+  animObs.observe(el);
+});
+</script>
+
+<script data-pplx-inline-edit>
+(function(){
+  if(window===window.top)return;
+  function inlineAll(orig,clone){
+    if(orig.nodeType!==1)return;
+    try{
+      var cs=getComputedStyle(orig);
+      var t='';
+      for(var i=0;i<cs.length;i++){t+=cs[i]+':'+cs.getPropertyValue(cs[i])+';';}
+      clone.style.cssText=t;
+    }catch(e){}
+    var oc=orig.children,cc=clone.children;
+    for(var j=0;j<oc.length&&j<cc.length;j++){inlineAll(oc[j],cc[j]);}
+  }
+  function stripExternal(clone){
+    var imgs=clone.querySelectorAll('img');
+    for(var i=0;i<imgs.length;i++){
+      var s=imgs[i].getAttribute('src');
+      if(s&&!s.startsWith('data:'))imgs[i].removeAttribute('src');
+    }
+    var all=clone.querySelectorAll('*');
+    for(var i=0;i<all.length;i++){
+      var st=all[i].style.cssText;
+      if(st&&st.indexOf('url(')>=0){
+        all[i].style.cssText=st.replace(/url\(["']?(?!data:)[^)"']*["']?\)/gi,'none');
+      }
+    }
+  }
+  window.addEventListener('message',function(e){
+    if(!e.data||e.data.type!=='INLINE_EDIT_CAPTURE_REQUEST')return;
+    var scrollX=window.scrollX||window.pageXOffset||0;
+    var scrollY=window.scrollY||window.pageYOffset||0;
+    var w=window.innerWidth,h=window.innerHeight;
+    try{
+      var clone=document.documentElement.cloneNode(true);
+      var rm=clone.querySelectorAll('script,link[rel="stylesheet"],style');
+      for(var i=0;i<rm.length;i++){rm[i].remove();}
+      inlineAll(document.documentElement,clone);
+      stripExternal(clone);
+      var html=new XMLSerializer().serializeToString(clone);
+      var svg='<svg xmlns="http://www.w3.org/2000/svg" width="'+w+'" height="'+h+'">'
+        +'<foreignObject width="100%" height="100%">'
+        +'<div xmlns="http://www.w3.org/1999/xhtml" style="width:'+w+'px;height:'+h+'px;overflow:hidden">'
+        +'<div style="transform:translate(-'+scrollX+'px,-'+scrollY+'px);transform-origin:top left">'
+        +html+'</div></div></foreignObject></svg>';
+      var svgUrl='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg);
+      var img=new Image();
+      img.onload=function(){
+        var c=document.createElement('canvas');c.width=w;c.height=h;
+        c.getContext('2d').drawImage(img,0,0);
+        window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:c.toDataURL('image/png'),scrollX:scrollX,scrollY:scrollY},'*');
+      };
+      img.onerror=function(){
+        window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:null,scrollX:scrollX,scrollY:scrollY},'*');
+      };
+      img.src=svgUrl;
+    }catch(err){
+      window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:null,scrollX:scrollX,scrollY:scrollY},'*');
+    }
+  });
+})();
+</script></body>
+</html>
